@@ -4,7 +4,8 @@
 
 ## Guides
 
-* [Making your first program](guides/making-your-first-program.md)
+* [Declaring Variables](guides/declaring-variables.md)
+* [Inputs and Outputs](guides/inputs-and-outputs.md)
 * [Conditional Structures](guides/conditional-structures.md)
 * [Loop Structures](guides/loop-structures.md)
 * [Functions and Procedures](guides/functions-and-procedures.md)
