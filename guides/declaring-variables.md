@@ -56,7 +56,7 @@ DECLARE myArray : ARRAY[0:100] OF INTEGER
 ```
 
 {% hint style="warning" %}
-Unlike lists in python arrays can only consist of a single data type.
+Unlike lists in python arrays can only consist of a single data type as well as a fixed length.
 {% endhint %}
 
 **Two dimensional arrays** are declared as follows:
