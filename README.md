@@ -14,8 +14,8 @@ description: Documentation on what is pseudonaja
 A link to the GitHub Repo
 {% endembed %}
 
-{% embed url="https://editor.codingcactus.repl.co" %}
-A link to the editor
+{% embed url="https://editor.codingcactus.repl.co/?ldisgh=" %}
+A link to the editors
 {% endembed %}
 
 ### Guides: Jump right in
