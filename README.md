@@ -22,8 +22,8 @@ A link to the editor
 
 Follow our handy guides to get started on the basics as quickly as possible:
 
-{% content-ref url="guides/declaring-variables.md" %}
-[declaring-variables.md](guides/declaring-variables.md)
+{% content-ref url="guides/declaring-variables-and-arrays.md" %}
+[declaring-variables-and-arrays.md](guides/declaring-variables-and-arrays.md)
 {% endcontent-ref %}
 
 {% content-ref url="guides/conditional-structures.md" %}

@@ -4,7 +4,7 @@
 
 ## Guides
 
-* [Declaring Variables](guides/declaring-variables.md)
+* [Declaring Variables and Arrays](guides/declaring-variables-and-arrays.md)
 * [Inputs and Outputs](guides/inputs-and-outputs.md)
 * [Conditional Structures](guides/conditional-structures.md)
 * [Loop Structures](guides/loop-structures.md)
