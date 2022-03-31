@@ -15,7 +15,7 @@ A link to the GitHub Repo
 {% endembed %}
 
 {% embed url="https://editor.codingcactus.repl.co/?ldisgh=" %}
-A link to the editors
+A link to the editor
 {% endembed %}
 
 ### Guides: Jump right in
