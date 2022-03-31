@@ -9,6 +9,8 @@ A small number of keyboard shortcuts can be used with **pseudonaja**:
 
 
 
-| Shortcut | Action                           | Notes |
-| -------- | -------------------------------- | ----- |
-| ⌘/⌃ F    | Show / Hide find an replace menu |       |
+| Shortcut | Action                                      | Notes |
+| -------- | ------------------------------------------- | ----- |
+| ⌘/⌃ F    | Show / Hide find an replace menu            |       |
+| ⌘/⌃ O    | Load a local file into the editor           |       |
+| ⌘/⌃ S    | Save current editor content to a local file |       |
