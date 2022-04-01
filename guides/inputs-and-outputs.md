@@ -10,15 +10,19 @@ This section will take you through basic inputting and outputting of data in Pse
 
 ### Inputs
 
-To input values, the INPUT command is used, as follows:
+To input values, the INPUT command is used, however the variable that is being input into must first be declared, as follows:
 
 ```
+DECLARE <variable name> : <data type>
+
 INPUT <variable name>
 ```
 
 An example of this would be:
 
 ```
+DECLARE num1 : INTEGER
+
 INPUT num1
 ```
 
