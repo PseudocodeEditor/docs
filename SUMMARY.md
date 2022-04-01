@@ -11,7 +11,7 @@
 * [Functions and Procedures](guides/functions-and-procedures.md)
 * [Records](guides/records.md)
 * [Classes](guides/classes.md)
-* [Records](guides/records-1.md)
+* [Records](<guides/records (1).md>)
 * [👨💻 👨💻 Helping Develop Pseudonaja](guides/helping-develop-pseudonaja.md)
 
 ## Extras
