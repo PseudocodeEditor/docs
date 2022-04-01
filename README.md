@@ -38,7 +38,7 @@ Follow our handy guides to get started on the basics as quickly as possible:
 [functions-and-procedures.md](guides/functions-and-procedures.md)
 {% endcontent-ref %}
 
-{% content-ref url="guides/records (1).md" %}
-[records (1).md](<guides/records (1).md>)
+{% content-ref url="guides/records.md" %}
+[records.md](guides/records.md)
 {% endcontent-ref %}
 
