@@ -1,81 +1,87 @@
 ---
-description: How to help update the editor
+description: How to help update Pseudonaja
 ---
 
 # 👨💻 Helping Develop Pseudonaja
 
 ## Get Started
 
-Ready to contribute? Here’s how to set up _pseudonaja_ for local development.
+Ready to contribute? Here’s how to set up P_seudonaja_ for local development.
 
-Fork the pseudonaja repo on GitHub.
+### Clone a Repo
 
-Clone your fork locally:
+First you must fork the repos relevant to what you plan to change. Then you must clone repos to your local machine in order to make changes.
+
+#### Changes To The Editor
 
 ```bash
-$ git clone git@github.com:your_name_here/pseudonaja.git
+$ git clone git@github.com:PutYourUsernameHere/Codemirror-6-editor.git
 ```
 
-Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development:
+#### Changes To The Website
 
-```
-$ mkvirtualenv pseudonaja
-$ cd pseudonaja/
-$ python [setup.py](http://setup.py) develop
+```bash
+$ git clone git@github.com:PutYourUsernameHere/website.git
 ```
 
-Create a branch for local development:
+#### Changes To The Docs
 
+```bash
+$ git clone git@github.com:PutYourUsernameHere/docs.git
 ```
+
+### Create a Branch:
+
+```bash
 $ git checkout -b name-of-your-bugfix-or-feature
 ```
 
-Now you can make your changes locally.
+Now make your changes.
 
-When you’re done making changes, check that your changes pass flake8 and the tests, including testing other Python versions with tox:
+### Testing
 
+While there are no automated tests set up, it is highly encouraged that you thoroughly test anything your changes may have effected.
+
+To do this you will need to:
+
+#### Roll Up the Editor Files to a Single File For Use on the Frontend
+
+If your changes effect the editor or the website you will need to roll up the editor files for use on the website. The repo is already set up with a rollup configuration, so simply run:
+
+```bash
+$ npx rollup -c
 ```
-$ flake8 pseudonaja tests
-$ python [setup.py](http://setup.py) test or pytest
-$ tox
+
+#### Use the Rolled Up File on the Frontend
+
+The repo is also already set up with a simple web server to serve the rolled up file. Simply run:
+
+```bash
+$ node index.js
 ```
 
-To get flake8 and tox, just pip install them into your virtualenv.
+Then all you need to do is have a webpage with the following in the body:
 
-Commit your changes and push your branch to GitHub:
-
+```html
+<div id="editor"></div>
+<script src="wherever your webserver is hosted"></script>
 ```
+
+After those two steps, you should have a webpage with the editor on, on which you can test your changes.
+
+### Commit and Push Changes:
+
+Once you are sure your changes work and haven't broken anything, push them to your forked repo.
+
+```bash
 $ git add .
 $ git commit -m "Your detailed description of your changes."
 $ git push origin name-of-your-bugfix-or-feature
 ```
 
-Submit a pull request through the GitHub website.
+### Submit a Pull Request to the Relevant GitHub Repo
 
-### Pull Request Guidelines
+* [Editor](https://github.com/PseudocodeEditor/Codemirror-6-editor/pulls)
+* [Website](https://github.com/PseudocodeEditor/website/pulls)
+* [Documentation](https://github.com/PseudocodeEditor/docs/pulls)
 
-Before you submit a pull request, check that it meets these guidelines:
-
-1. The pull request should include tests.
-2. If the pull request adds functionality, the docs should be updated. Put your new functionality into a function with a docstring, and add the feature to the list in README.rst.
-3. The pull request should work for Python 3.5, 3.6, 3.7 and 3.8, and for PyPy. Check [https://travis-ci.com/dsoon/pseudonaja/pull\_requests](https://travis-ci.com/dsoon/pseudonaja/pull\_requests) and make sure that the tests pass for all supported Python versions.
-
-### Tips
-
-To run a subset of tests:
-
-```
-$ python -m unittest tests.test_pseudonaja
-```
-
-### Deploying
-
-A reminder for the maintainers on how to deploy. Make sure all your changes are committed (including an entry in HISTORY.rst). Then run:
-
-```
-$ bump2version patch # possible: major / minor / patch
-$ git push
-$ git push --tags
-```
-
-Travis will then deploy to PyPI if tests pass.
